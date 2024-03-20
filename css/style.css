@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body-home {
+    background-image: url(../assets/img/fondo.avif);
+    background-size: 100%;
+}
+
+.body-turbo {
+    background-image: url(../assets/img/fondo.turbos.jpg);
+   background-size: 100%;
+}
+
+.body-suspe {
+    background-repeat: no-repeat;
+    background-image: url(../assets/img/fondo.suspe.jpg);
+    background-size: 100%
+    
+
+    
+}
+
+.body-adm {
+    background-image: url(../assets/img/fondo.admi.jpg);
+    background-size: 100%
+}
+
+.body-contacto {
+    background-image: url(../assets/img/fondo_contacto.jpg);
+    background-size: 100%;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.568);
+}
+
+.menu {
+    width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 140px;
+    clear: both;
+    display: table;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 100px;
+    float: left;
+    padding: 40px 0;
+    
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    
+}
+
+header div h1 {
+    text-align: center;
+    color: whitesmoke;
+}
+
+header div img {
+    position: absolute;
+    top: 10px;
+    left: 3rem;
+    width: 120px
+    
+}
+
+
+footer {
+    background-color: black;
+    padding: 20px 0;
+    text-align: center;
+    color: whitesmoke;
+    position: fixed;
+    left: 10;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.redes a{
+    margin: 0 10px;
+}
+
+.redes img {
+    width: 30px;
+    height: auto;
+}
+
+.imagenes-home {
+    background-color: rgba(0, 0, 0, 0.568);
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 300px;
+}
+
+.imagenes-home a {
+    margin: 0 50px;
+}
+
+section div a img {
+    width: 250px;
+    height: 300px;
+}
+
+
+.suspe-superior {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 45px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 400px;
+}
+
+
+.img-suspe img {
+    margin: 0 70px;
+    width: 250px;
+    height: 300px;
+}
+
+section div h2 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 25px;
+    padding-bottom: 40px;
+}
+
+.suspe-inferior {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 40px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 50px;
+}
+
+.img-susp-inf img {
+    margin: 0 70px;
+    width: 250px;
+    height: 300px;
+}
+
+.adm-superior {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 40px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 480px;
+    height: 300px;
+}
+
+.img-adm img {
+    margin: 0 70px;
+    width: 250px;
+    height: 250px;
+}
+
+.adm-inf {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 40px 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    bottom: 100px;
+    height: 300px;
+}
+
+.img-adm-inf img {
+    margin: 0 70px;
+    width: 250px;
+    height: 250px;
+}
+
+.turbo-superior {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 40px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 480px;
+    height: 300px;
+}
+
+.img-turbo img {
+    margin: 0 70px;
+    width: 250px;
+    height: 250px;
+}
+
+.turbo-inf {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 40px 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    bottom: 100px;
+    height: 300px;
+}
+
+.img-turbo-inf img {
+    margin: 0 70px;
+    width: 250px;
+    height: 250px;
+}
+
+.form {
+    color: black;
+}
+
+.formulario {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: rgba(245, 245, 245, 0.603);
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+
+}
+
+.formulario input[type="text"],
+
+.formulario input[type="email"], 
+
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.formulario textarea {
+    height: 100px;
+}
+
+.formulario input[type="submit"] {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #0066ff;
+}
+
