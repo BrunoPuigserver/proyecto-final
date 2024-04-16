@@ -1,0 +1,202 @@
+/**utilities**/
+/**archivos de base**/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/**layout**/
+.body-home, .body-contacto, .body-adm, .body-suspe, .body-turbo {
+  background-image: url(../assets/img/fondo.avif);
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.body-turbo {
+  background-image: url(../assets/img/fondo.turbos.jpg);
+}
+
+.body-suspe {
+  background-image: url(../assets/img/fondo.suspe.jpg);
+}
+
+.body-adm {
+  background-image: url(../assets/img/fondo.admi.jpg);
+}
+
+.body-contacto {
+  background-image: url(../assets/img/fondo_contacto.jpg);
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.425);
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.425);
+}
+
+header {
+  width: 100%;
+  height: 140px;
+  clear: both;
+  display: table;
+}
+
+.menu {
+  background-color: rgba(0, 0, 0, 0.425);
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+}
+
+.logo img {
+  position: absolute;
+  top: 10px;
+  left: 3rem;
+  width: 120px;
+}
+
+.imagenes-home {
+  background-color: rgba(0, 0, 0, 0.425);
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 19rem;
+}
+
+.grid-inicio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.grid-inicio img {
+  width: 300px;
+  height: 300px;
+}
+
+.imagenes-home a {
+  margin: 0 50px;
+}
+
+section div a img {
+  width: 250px;
+  height: 300px;
+}
+
+.contenedor {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contenedor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.grid-item img {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.h2-suspe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  color: rgb(255, 255, 255);
+}
+
+footer {
+  background-color: black;
+  padding: 20px 0;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  position: fixed;
+  left: 10;
+  bottom: 0;
+  width: 100%;
+}
+
+.redes a {
+  margin: 0 10px;
+}
+
+.redes img {
+  width: 30px;
+  height: auto;
+}
+
+.form {
+  color: rgba(0, 0, 0, 0.425);
+}
+
+.formluario {
+  max-width: 25rem;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: rgba(245, 245, 245, 0.603);
+  border-radius: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.formulario input[type=text],
+.formulario input[type=email],
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.formulario input [type=submit] {
+  background-color: rgba(0, 0, 0, 0.425);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.formulario input[type=submit]:hover {
+  background-color: #0066ff;
+}
+
+/**components**//*# sourceMappingURL=style.css.map */

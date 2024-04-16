@@ -1,0 +1,71 @@
+.imagenes-home {
+    background-color: $back;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 19rem;
+
+}
+.grid-inicio {
+    display: grid;
+    grid-template-columns: $tmpc;
+    grid-template-rows: repeat(1, 1fr);
+    gap: 1.25rem;
+    width: 100%;
+}
+.grid-inicio img {
+    width: 300px;
+    height: 300px;
+}
+.imagenes-home a {
+    margin: 0 50px;
+}
+section div a img {
+    width: 250px;
+    height: 300px;
+}
+.contenedor {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: $tmpc;
+    grid-template-rows: $tmpr;
+    gap: 1.25rem;
+}
+.grid-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+.h2-suspe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    color: $txtcolor;
+    height: 20px;
+    width: 100%;
+}
+
+.img-adm img {
+    margin: 0 70px;
+    width: 250px;
+    height: 250px;
+}
+.img-adm h2 {
+    color: $txtcolor;
+
+}
+.img-turbo-inf img {
+    margin: 0 70px;
+    width: 250px;
+    height: 250px;
+}
+

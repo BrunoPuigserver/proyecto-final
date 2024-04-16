@@ -1,0 +1,28 @@
+.body-home {
+    background-image: url(../assets/img/fondo.avif);
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.body-turbo {
+    @extend .body-home;
+    background-image: url(../assets/img/fondo.turbos.jpg);
+
+}
+
+.body-suspe {
+    @extend .body-home;
+    background-image: url(../assets/img/fondo.suspe.jpg);
+}
+
+.body-adm {
+    @extend .body-home;
+    background-image: url(../assets/img/fondo.admi.jpg);
+    
+}
+
+.body-contacto {
+    @extend .body-home;
+    background-image: url(../assets/img/fondo_contacto.jpg);
+    
+}

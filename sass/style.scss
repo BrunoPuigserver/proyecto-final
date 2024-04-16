@@ -1,0 +1,16 @@
+/**utilities**/
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./utilities/funciones";
+
+/**archivos de base**/
+@import "./base/reset";
+
+/**layout**/
+@import "./layout/body";
+@import "./layout/header";
+@import "./layout/main-index";
+@import "./layout/footer";
+@import "./layout/main-contacto";
+@import "./layout/MediaQuerry/media320.scss";
+/**components**/

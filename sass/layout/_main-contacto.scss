@@ -1,0 +1,39 @@
+.form {
+    color: $back;
+}
+.formulario {
+    max-width: 25rem;
+    margin: 0 auto;
+    padding: 50px;
+    background-color:  rgba(245, 245, 245, 0.603);
+    border-radius: 5px;
+    font-family: $font;
+
+}
+
+.formulario input[type="text"],
+
+.formulario input[type="email"], 
+
+.formulario textarea {
+   width: 100%;
+   padding: 10px;
+   margin: 5px 0;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   box-sizing: border-box;
+}
+.formulario textarea {
+    height: 100px;
+}
+.formulario input [type="submit"] {
+    background-color: $back;
+    color: $txtcolor;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.formulario input[type="submit"]:hover {
+    background-color: #0066ff;
+}
