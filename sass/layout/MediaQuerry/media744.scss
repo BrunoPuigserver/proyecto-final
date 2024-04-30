@@ -1,0 +1,80 @@
+@media (max-width: 744px) {
+    .contenedor {
+        height: 90vh;
+    }
+    .grid-item img {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 50px;
+    }
+    .contenedor-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 15px;
+        margin-bottom: 80px;
+    }
+    .logo img {
+        width: 11vh;
+        height: 11vh;
+        left:  2.8vh;
+        top: 7.4vh;
+    }
+    .logo-home img {
+        width: 11vh;
+        height: 11vh;
+        left:  2.8vh;
+        top: 2vh;
+    }
+    .titulo-an h1 {
+        color: #000000;
+        font-size: 2vh;
+    }
+    .titulo-an {
+        font-size: 2vh;
+    }
+    @keyframes anim {
+        0% {
+            width: 0;
+            height: 0;
+        }
+    
+        30% {
+            width: 50%;
+            height: 0;
+        }
+        60% {
+            width: 40vw;
+            height: 3vw;
+        }
+        80% {
+            width: 40vw;
+            height: 3vw;
+        }
+        100% {
+            width: 40vw;
+            height: 3vw;
+        }
+    }
+    .grid-inicio img {
+        width: 200px;
+        height: 200px;
+    }
+    .imagenes-home a {
+        margin: 0 15px;
+    }
+    .carrusel {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 70%;
+        height: 70%;
+        margin-right: 110px;
+        margin-bottom: 100px;
+    }
+    .contenedor-info {
+        height: 50%;
+        width: 80%;
+        margin-top: 20%;
+        margin-left: 70px;
+    }
+    }

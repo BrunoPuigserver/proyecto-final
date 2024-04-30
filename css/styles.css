@@ -45,6 +45,12 @@ header {
   left: 3rem;
   width: 120px; }
 
+.logo-home img {
+  position: absolute;
+  top: 10px;
+  left: 3rem;
+  width: 120px; }
+
 .titulo-an {
   position: absolute;
   left: 50%;
@@ -142,16 +148,39 @@ section div a img {
 .grid-item img {
   width: 300px;
   height: 300px;
-  object-fit: cover; }
+  object-fit: cover;
+  cursor: pointer; }
+
+.grid-item {
+  position: relative; }
+
+.filtro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 2s ease; }
+
+.grid-item:hover .filtro {
+  opacity: 1; }
 
 .h2-suspe {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  height: 100px;
   color: white;
-  height: 20px;
-  width: 100%; }
+  margin-top: 15vh;
+  background-color: rgba(0, 0, 0, 0.568); }
+
+.contenido {
+  text-align: center; }
+
+.content h2 {
+  margin-bottom: 15px; }
 
 .img-adm img {
   margin: 0 70px;
@@ -165,6 +194,40 @@ section div a img {
   margin: 0 70px;
   width: 250px;
   height: 250px; }
+
+.carrusel {
+  float: right;
+  width: 35%;
+  height: 35%;
+  margin-right: 10%; }
+
+.contenedor-info {
+  background-color: rgba(0, 0, 0, 0.438);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 60%;
+  list-style: none;
+  color: white;
+  width: 40%;
+  margin-top: 250px;
+  margin-left: 5%; }
+
+.content-suspe {
+  text-align: left;
+  margin-bottom: 20px; }
+
+.content-suspe ul li {
+  margin-bottom: 40px; }
+
+.suspe-car img {
+  cursor: pointer; }
+
+.suspe-car {
+  position: relative; }
+
+.suspe-car:hover .filtro {
+  opacity: 1; }
 
 footer {
   background-color: black;
@@ -218,21 +281,91 @@ footer {
 .formulario input[type="submit"]:hover {
   background-color: #0066ff; }
 
+@media (max-width: 744px) {
+  .contenedor {
+    height: 90vh; }
+  .grid-item img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 50px; }
+  .contenedor-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 80px; }
+  .logo img {
+    width: 11vh;
+    height: 11vh;
+    left: 2.8vh;
+    top: 7.4vh; }
+  .logo-home img {
+    width: 11vh;
+    height: 11vh;
+    left: 2.8vh;
+    top: 2vh; }
+  .titulo-an h1 {
+    color: #000000;
+    font-size: 2vh; }
+  .titulo-an {
+    font-size: 2vh; }
+  @keyframes anim {
+    0% {
+      width: 0;
+      height: 0; }
+    30% {
+      width: 50%;
+      height: 0; }
+    60% {
+      width: 40vw;
+      height: 3vw; }
+    80% {
+      width: 40vw;
+      height: 3vw; }
+    100% {
+      width: 40vw;
+      height: 3vw; } }
+  .grid-inicio img {
+    width: 200px;
+    height: 200px; }
+  .imagenes-home a {
+    margin: 0 15px; }
+  .carrusel {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 70%;
+    height: 70%;
+    margin-right: 110px;
+    margin-bottom: 100px; }
+  .contenedor-info {
+    height: 50%;
+    width: 80%;
+    margin-top: 20%;
+    margin-left: 70px; } }
+
 @media (max-width: 320px) {
   .contenedor {
     height: 70vh; }
   .grid-item img {
     width: 200px;
-    height: 200px; }
+    height: 200px;
+    margin-bottom: 100px; }
   .contenedor-grid {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    gap: 15px; }
+    gap: 10px;
+    bottom: 80px; }
   .h2-suspe {
     font-size: 10px; }
   nav ul li a {
     left: 30%;
     font-size: 10px; }
+  .logo-home img {
+    left: 0rem;
+    width: 60px;
+    height: 65px;
+    top: 0px;
+    left: 0px; }
   .logo img {
     left: 0rem;
     width: 60px;
@@ -242,32 +375,52 @@ footer {
   .titulo {
     font-size: 20px; }
   .titulo-an {
-    font-size: 0px;
-    height: 0px;
-    width: 0px; }
+    font-size: 1.5vh;
+    height: 15vh;
+    width: 25vh; }
+  .titulo-an h1 {
+    font-size: 1vh; }
+  .grid-inicio img {
+    width: 150px;
+    height: 150px; }
   @keyframes anim {
     0% {
       width: 0;
       height: 0; }
     30% {
-      width: 0%;
+      width: 50%;
       height: 0; }
     60% {
-      width: 0vw;
-      height: 0vw; }
+      width: 40vw;
+      height: 6vw; }
     80% {
-      width: 0vw;
-      height: 0vw; }
+      width: 40vw;
+      height: 6vw; }
     100% {
-      width: 0vw;
-      height: 0vw; } }
+      width: 40vw;
+      height: 6vw; } }
   .grid-inicio {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
     height: 33vh; }
-  .grid-inicio img {
-    width: 150px;
-    height: 150px; } }
+  .carrusel {
+    width: 70%;
+    height: 70%;
+    margin-right: 15%;
+    margin-top: 0%; }
+  .contenedor-info {
+    height: 50%;
+    width: 80%;
+    margin-top: 20%;
+    margin-left: 10%; }
+  .content-suspe {
+    font-size: 13px; }
+  .h2-suspe h2 {
+    font-size: 15px; }
+  .h2-suspe {
+    width: 100%;
+    height: 40px;
+    margin-top: 0%; } }
 
 /**components**/

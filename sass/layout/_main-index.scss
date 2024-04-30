@@ -9,7 +9,7 @@
 }
 .grid-inicio {
     display: grid;
-    grid-template-columns: $tmpc;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
     gap: 1.25rem;
     width: 100%;
@@ -41,17 +41,38 @@ section div a img {
     width: 300px;
     height: 300px;
     object-fit: cover;
+    cursor: pointer;
 }
-
-
+.grid-item {
+    position: relative;
+}
+.filtro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    padding: 10px;
+    opacity: 0; 
+    transition: opacity 2s ease;
+}
+.grid-item:hover .filtro {
+    opacity: 1;
+}
 .h2-suspe {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    height: 100px;
     color: $txtcolor;
-    height: 20px;
-    width: 100%;
+    margin-top: 15vh;
+    background-color: rgba(0, 0, 0, 0.568);
+}
+.contenido {
+    text-align: center;
+}
+.content h2 {
+    margin-bottom: 15px;
 }
 
 .img-adm img {
@@ -67,5 +88,39 @@ section div a img {
     margin: 0 70px;
     width: 250px;
     height: 250px;
+}
+.carrusel {
+    float: right;
+    width: 35%;
+    height: 35%;
+    margin-right: 10%;
+}
+.contenedor-info {
+    background-color: rgba(0, 0, 0, 0.438);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 60%;
+    list-style: none;
+    color: $txtcolor;
+    width: 40%;
+    margin-top: 250px;
+    margin-left: 5%
+}
+.content-suspe {
+    text-align: left;
+    margin-bottom: 20px;
+}
+.content-suspe ul li {
+    margin-bottom: 40px;
+}
+.suspe-car img {
+    cursor: pointer;
+}
+.suspe-car {
+    position: relative;
+}
+.suspe-car:hover .filtro {
+    opacity: 1;
 }
 
